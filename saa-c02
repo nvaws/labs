@@ -1,79 +1,97 @@
-Security
-IAM
-MFA
-Permission boundary
-KMS
-CloudHSM
-WAF
-Shield
+Day 01
+
+Security:
+----IAM
+----MFA
+----Permissions boundary
+----KMS
+----CloudHSM
+----WAF
+----Shield
 Resource Access Manager 
 
-Networking
-VPC
-NACL
-Security Group
-VPC Peering
-VPN
-Direct Connect
-VPC Endpoints
-NAT Gateway
-ClassicLink 
-PrivateLink 
-Route 53
-Routing Policies
-Alias record
-geoproximity 
-Country level blocking
-CloudFront
+Networking:
+----VPC
+VPC FlowLogs
+----NACL
+----Security Group
+----VPC Peering
+----VPN
+----Direct Connect
+----VPC Endpoints
+----NAT Gateway
+----ClassicLink
+----PrivateLink 
+
+----Route 53
+----Routing Policies
+----Alias record
+----Geoproximity 
+----Country level blocking
+----CloudFront
 API gateway
-Globle Accelerator
+Global Accelerator
 
-Compute
-EC2
-EC2 pricing model
-Standard Reserved Instances 
-Scheduled Reserved Instances 
-ASG
-Target tracking policy
-Simple scaling policy
-Step scaling
-Scheduled scaling policy 
-ALB
-NLB
-ECS
-Fargate
-Lambda
-HPC
-Placement Group
+Compute:
+----EC2
+----EC2 pricing model
+----Standard Reserved Instances
+----Scheduled Reserved Instances
+----ASG
+----Target tracking policy
+----Simple scaling policy
+----Step scaling
+----Scheduled scaling policy
+----Elastic Beanstalk
+----ALB
+----NLB
+----HPC
+----Placement Group
 
-Storage
-Instance Store
-EBS
-EBS Snapshot
-S3 Versioning
-S3 Static website hosting
-S3 ACL
-S3 bucket policy
-S3 tiers
-S3 lifecycle policy
-S3 encryption
-S3 transfer acceleration
-S3 presigned url
-S3 CRR
-S3 object lock
-S3 server access logging
-S3 accidental deletion
-EFS
-FSx
-FSx for Lustre
-Storage Gateway
-HPC relevant storage
-Glacier
-Snowball
-DataSync
-Consistency Model
+Day 02
 
-Database
+Storage:
+----Instance Store
+----EBS
+----EBS Snapshot
+----S3 Versioning 
+----S3 presigned url
+----S3 ACL
+----S3 bucket policy
+----S3 Static website hosting
+----S3 tiers
+----Glacier
+----S3 lifecycle policy
+----S3 encryption
+----S3 transfer acceleration
+----S3 CRR (Replication)
+----S3 object lock
+----S3 server access logging
+----S3 accidental deletion
+----Consistency Model
+----EFS
+----FSx
+----FSx for Lustre
+----Storage Gateway
+----DataSync
+----Snowball
+----HPC relevant storage
+
+Application Integration:
+----SQS, features
+----SNS
+
+Management & Governance:
+Organizations
+Service Control Policies
+CloudWatch
+CloudTrail
+Trusted Advisor
+CloudFormation
+
+Day 03
+
+Database:
 RDS
 Read Replica
 Aurora global database 
@@ -84,19 +102,12 @@ Redis vs Memcached
 Redshift
 ACID compliance
 
-Application Integration
-SQS, features
-SNS
+Compute:
+ECS
+Fargate
+Lambda
 
-Management & Governance
-Organizations
-Service Control Policies
-CloudWatch
-CloudTrail
-Trusted Advisor
-CloudFormation
-
-Analytics
+Analytics:
 Kinesis Data Firehose
 Kinesis Data Streams
 Kinesis Data Analytics 
@@ -106,3 +117,4 @@ stateless application
 decoupling
 Athena
 Quicksight
+
