@@ -2,7 +2,7 @@ This lab helps you create a web application for your company that specialises in
 
 
 
-AWS services USed:  
+AWS services used:  
 - IAM
 - Elastic Beanstalk
 - Cloudformation
