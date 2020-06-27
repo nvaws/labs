@@ -92,15 +92,15 @@ CloudFormation
 Day 03
 
 Database:
-RDS
-Read Replica
-Aurora global database 
-DynamoDB
-DynamoDB Globle Tables
-ElastiCache
-Redis vs Memcached
-Redshift
-ACID compliance
+----RDS
+----Read Replica
+----Aurora global database 
+----DynamoDB
+----DynamoDB Globle Tables
+----ElastiCache
+----Redis vs Memcached
+----Redshift
+----ACID compliance
 
 Compute:
 ECS
