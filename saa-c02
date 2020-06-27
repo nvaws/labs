@@ -8,11 +8,11 @@ Security:
 ----CloudHSM
 ----WAF
 ----Shield
-Resource Access Manager 
+----Resource Access Manager 
 
 Networking:
 ----VPC
-VPC FlowLogs
+----VPC FlowLogs
 ----NACL
 ----Security Group
 ----VPC Peering
@@ -82,11 +82,11 @@ Application Integration:
 ----SNS
 
 Management & Governance:
-Organizations
-Service Control Policies
-CloudWatch
-CloudTrail
-Trusted Advisor
+----Organizations
+----Service Control Policies
+----CloudWatch
+----CloudTrail
+----Trusted Advisor
 CloudFormation
 
 Day 03
@@ -108,9 +108,9 @@ Fargate
 Lambda
 
 Analytics:
-Kinesis Data Firehose
-Kinesis Data Streams
-Kinesis Data Analytics 
+----Kinesis Data Firehose
+----Kinesis Data Streams
+----Kinesis Data Analytics 
 
 Others
 stateless application
