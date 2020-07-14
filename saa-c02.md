@@ -1,5 +1,5 @@
 
-Day 01
+# Day 01
 
 - IAM
   - Owner's account AKA The root user
@@ -15,7 +15,7 @@ Day 01
 - Shield
 - Resource Access Manager
 
-Networking:
+**Networking:**
 
 - VPC
   - Subnets (Public, Private)
@@ -40,7 +40,7 @@ Networking:
 - API gateway
 - Global Accelerator
 
-Compute:
+**Compute:**
 
 - EC2
 - Creation Modification, Deletion
@@ -67,9 +67,9 @@ Compute:
 - HPC
 - Placement Group
 
-Day 02
+# Day 02
 
-Storage:
+**Storage:**
 
 - Block Storage
   - Instance Store
@@ -102,12 +102,12 @@ Storage:
   - Snowmobile
 - HPC relevant storage
 
-Application Integration:
+**Application Integration:**
 
 - SQS, features
 - SNS
 
-Management & Governance:
+**Management & Governance:**
 
 - Organizations
   - Consolidated Billing
@@ -118,9 +118,9 @@ Management & Governance:
 - CloudFormation
 - OpsWorks
 
-Day 03
+# Day 03
 
-Database:
+**Database:**
 
 - RDS
   - Types, Creation, Modification and Deletion
@@ -133,13 +133,13 @@ Database:
   - Redis vs Memcached
 - Redshift
 
-Compute:
+**Compute:**
 
 - ECS
 - Fargate
 - Lambda
 
-Analytics:
+**Analytics:**
 
 - EMR
 - Kinesis
@@ -147,7 +147,7 @@ Analytics:
   - Data Streams
   - Data Analytics
 
-Others
+**Others:**
 
 - Stateless Application
 - Decoupling
