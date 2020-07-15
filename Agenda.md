@@ -184,6 +184,7 @@
 - [AWS Blog](https://aws.amazon.com/blogs/)
 - [AWS Knowledge Center](https://aws.amazon.com/premiumsupport/knowledge-center/)
 - [AWS Samples](https://github.com/aws-samples), [AWS Labs](https://github.com/awslabs)
+- [Application Migration Workshop](https://application-migration-with-aws.workshop.aws/en)
 - [AWS Solutions](https://aws.amazon.com/solutions/)
 - [AWS Events](https://aws.amazon.com/events/)
 - [AWS YouTube Channel](https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg) reInvent, breakout sessions, aws.training, [whitepapers](https://aws.amazon.com/whitepapers/?whitepapers/), [customer case studies](https://aws.amazon.com/solutions/case-studies/), [this is my architecture](https://aws.amazon.com/this-is-my-architecture/)
