@@ -1,6 +1,6 @@
-## AWS-SAA-C02
+# AWS-SAA-C02
 
-# Day 01
+## Day 01
 
 - Basics of Cloud Computing 
 - [The NIST definition of cloud computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
@@ -34,7 +34,7 @@
 - [Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html)
 - [Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)
 
-## Networking
+### Networking
 
 - [VPC](https://aws.amazon.com/vpc/)
   - [Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#vpc-subnet-basics) (Public, Private)
@@ -60,7 +60,7 @@
 - [API gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
 - [Global Accelerator](https://aws.amazon.com/global-accelerator/)
 
-## Compute
+### Compute
 
 - [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 - Creation Modification, Deletion
@@ -82,9 +82,9 @@
 - HPC
 - [Placement Group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 
-# Day 02
+## Day 02
 
-## Storage
+### Storage
 
 - Block Storage
   - [Instance Stored Volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
@@ -122,12 +122,12 @@
   - [Snowcone](https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snowcone-what-is-snowcone.html)
 - [HPC relevant storage](https://d1.awsstatic.com/whitepapers/AWS%20Partner%20Network_HPC%20Storage%20Options_2019_FINAL.pdf)
 
-## Application Integration
+### Application Integration
 
 - [SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
 - [SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 
-## Management & Governance
+### Management & Governance
 
 - [Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
   - Consolidated Billing
@@ -138,9 +138,9 @@
 - [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
 - [OpsWorks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html)
 
-# Day 03
+## Day 03
 
-## Database
+### Database
 
 - RDS
   - Types, Creation, Modification and Deletion
@@ -153,13 +153,13 @@
   - Redis vs Memcached
 - Redshift
 
-## Compute
+### Compute
 
 - ECS
 - Fargate
 - Lambda
 
-## Analytics
+### Analytics
 
 - EMR
 - Kinesis
@@ -167,14 +167,14 @@
   - Data Streams
   - Data Analytics
 
-## Others
+### Others
 
 - Stateless Application
 - Decoupling
 - Athena
 - Quicksight
 
-## Wrap up
+### Wrap up
 
 - [Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html), [AWS Pricing Calculator](https://calculator.aws/#/), [AWS TCO Calculator](https://awstcocalculator.com/)
 - [AWS Services quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
