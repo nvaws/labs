@@ -1,73 +1,84 @@
+**AWS-SAA-C02**
 
 # Day 01
 
-- IAM
-  - Owner's account AKA The root user
-  - MFA
-  - Policy (AWS Managed, Customer managed, Inline)
-  - Users
-  - Groups
-  - Permissions boundary
-  - IAM Roles (to be revisited)
-- KMS
-- CloudHSM
+- Basics of Cloud Computing 
+- [The NIST definition of cloud computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
+- [Introduction and History of AWS](https://techcrunch.com/2016/07/02/andy-jassys-brief-history-of-the-genesis-of-aws/)
+- [Certification Roadmap](https://aws.amazon.com/certification/)
+- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [Regions, Availability Zones, Local Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) and [Edge Network Locations](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/#AWS_Edge_Network_Locations)
+- [Free tier account creation](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/) and [coverage](https://aws.amazon.com/free/)
+- Exploring the AWS Management Console
+- [Setting up free tier billing alerts](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html)
+- [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) (to be revisited)
+
+
+#### [AWS Documentation](https://docs.aws.amazon.com/index.html)
+#### [AWS Slideshare Channel](https://www.slideshare.net/AmazonWebServices)
+#### [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
+- [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+  - [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [only when to use it](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html)
+  - [MFA](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-root)
+  - [Policies and Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
+  - [Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html)
+  - [Groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
+  - [Permissions boundary](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+  - [IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) (to be revisited)
+  - [Common Tasks](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_quick-links-common-tasks.html)
+- [KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+- [CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)
 - [WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html)
 - [Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html)
-- Resource Access Manager
+- [Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)
 
 **Networking:**
 
 - [VPC](https://aws.amazon.com/vpc/)
   - [Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#vpc-subnet-basics) (Public, Private)
-  - VPC FlowLogs
+  - [VPC FlowLogs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
   - [RouteTables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
   - Gateways
-    - Internet Gateway
+    - [Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
     - [NAT Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html), [NAT Instances](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html); [Comparison](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html)
     - [VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
     - [Transit Gateway](https://aws.amazon.com/transit-gateway/)
     - [VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html) (to be revisited)
-    - Private Link
-  - ENI
+    - [Private Link](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-service.html)
+  - [ENI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html), [ENA](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking-ena.html), [EFA](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html) (Comparision)
   - [Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
   - [Network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) (Stateless)
   - [Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) (Stateful)
   - [Comparison of security groups and network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html)
   - [Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)
   - [Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
-- Route 53
-  - Routing Policies
+- [Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
+  - [Routing Policies](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
 - [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-- API gateway
-- Global Accelerator
+- [API gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
+- [Global Accelerator](https://aws.amazon.com/global-accelerator/)
 
 **Compute:**
 
 - [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 - Creation Modification, Deletion
 - [Userdata, Metadata (Comparison)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
-- Load Balancing
-  - ALB
-  - NLB
-- Auto Scaling
-  - Launch Configuration
-  - Auto Scaling Group
+- [Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)
+  - [ALB](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+  - [NLB](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)
+- [Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/scaling_plan.html)
+  - [Launch Configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchConfiguration.html)
+  - [Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html)
   - Scaling Policies
-    - Target tracking policy
-    - Simple scaling policy
-    - Step scaling
-    - Scheduled scaling policy
+    - [Target tracking policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
+    - [Simple, Step scaling policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
+    - [Scheduled scaling policy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html)
+    - [Scaling Based on SQS](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html)
+  - [Lifecycle Hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
 - [EC2 purchasing Options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html), [Tenancy](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html)
-  - On-Demand
-  - Reserved
-    - Standard Reserved Instances
-    - Scheduled Reserved Instances
-  - Spot Instances
-  - Savings Plan
-  - Dedicated Host
 - [Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 - HPC
-- Placement Group
+- [Placement Group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 
 # Day 02
 
@@ -78,7 +89,7 @@
   - [EBS, EBS Volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html)
     - Types
     - Creation, Modification, Deletion, Movement
-    - Snapshot
+    - [Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
 - Object Storage
 - [S3](https://aws.amazon.com/s3/)
   - [Pricing](https://aws.amazon.com/s3/pricing/)
@@ -86,26 +97,28 @@
   - [Static Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
   - [Pre-signed url](https://docs.aws.amazon.com/AmazonS3/latest/dev/ShareObjectPreSignedURL.html)
   - [ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/S3_ACLs_UsingACLs.html)
-  - [Bucket Policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html) (avoiding accidental deletion)
+  - [Bucket Policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html) 
   - [S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
   - [Object lifecycle management](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html)
-  - Encryption
+  - [Encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html)
   - [Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html)
   - [Replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/replication.html)
-  - Object lock
-  - Server access logging
-- Consistency Model
+  - [Object lock](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html)
+  - [Server access logging](https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html)
+  - [Avoiding accidental deletion](https://aws.amazon.com/premiumsupport/knowledge-center/s3-audit-deleted-missing-objects/)
+- [Data Consistency Model](https://docs.aws.amazon.com/AmazonS3/latest/dev/Introduction.html#ConsistencyModel)
 - [Glacier](https://aws.amazon.com/glacier/)
 - File Storage
-  - EFS
-  - FSx
-  - FSx for Lustre
+  - [EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
+  - [FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html)
+  - [FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html)
 - [Storage Gateway](https://aws.amazon.com/storagegateway/)
-- DataSync
-- Snow Family
+- [DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html)
+- [Snow Family](https://aws.amazon.com/snow/)
   - [Snowball](https://docs.aws.amazon.com/snowball/latest/ug/whatissnowball.html)
   - [Snowmobile](https://aws.amazon.com/snowmobile/)
-- HPC relevant storage
+  - [Snowcone](https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snowcone-what-is-snowcone.html)
+- [HPC relevant storage](https://d1.awsstatic.com/whitepapers/AWS%20Partner%20Network_HPC%20Storage%20Options_2019_FINAL.pdf)
 
 **Application Integration:**
 
@@ -114,12 +127,12 @@
 
 **Management & Governance:**
 
-- Organizations
+- [Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
   - Consolidated Billing
   - Service Control Policies
-- CloudWatch
-- CloudTrail
-- Trusted Advisor
+- [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+- [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+- [Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/)
 - [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
 - [OpsWorks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html)
 
