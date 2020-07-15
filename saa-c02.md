@@ -13,12 +13,11 @@
 - Exploring the AWS Management Console
 - [Setting up free tier billing alerts](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html)
 - [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) (to be revisited)
+- [AWS Documentation](https://docs.aws.amazon.com/index.html)
+- [AWS Slideshare Channel](https://www.slideshare.net/AmazonWebServices)
+- [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
 
-#### [AWS Documentation](https://docs.aws.amazon.com/index.html)
-
-#### [AWS Slideshare Channel](https://www.slideshare.net/AmazonWebServices)
-
-#### [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
+**AWS Services**
 
 - [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
   - [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [only when to use it](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html)
