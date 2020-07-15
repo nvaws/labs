@@ -1,4 +1,4 @@
-**AWS-SAA-C02**
+## AWS-SAA-C02
 
 # Day 01
 
@@ -17,7 +17,7 @@
 - [AWS Slideshare Channel](https://www.slideshare.net/AmazonWebServices)
 - [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
 
-**AWS Services**
+## AWS Services
 
 - [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
   - [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [only when to use it](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html)
@@ -34,7 +34,7 @@
 - [Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html)
 - [Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)
 
-**Networking:**
+## Networking
 
 - [VPC](https://aws.amazon.com/vpc/)
   - [Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#vpc-subnet-basics) (Public, Private)
@@ -60,7 +60,7 @@
 - [API gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
 - [Global Accelerator](https://aws.amazon.com/global-accelerator/)
 
-**Compute:**
+## Compute
 
 - [EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 - Creation Modification, Deletion
@@ -84,7 +84,7 @@
 
 # Day 02
 
-**Storage:**
+## Storage
 
 - Block Storage
   - [Instance Stored Volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
@@ -122,12 +122,12 @@
   - [Snowcone](https://docs.aws.amazon.com/snowball/latest/snowcone-guide/snowcone-what-is-snowcone.html)
 - [HPC relevant storage](https://d1.awsstatic.com/whitepapers/AWS%20Partner%20Network_HPC%20Storage%20Options_2019_FINAL.pdf)
 
-**Application Integration:**
+## Application Integration
 
 - [SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
 - [SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 
-**Management & Governance:**
+## Management & Governance
 
 - [Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
   - Consolidated Billing
@@ -140,7 +140,7 @@
 
 # Day 03
 
-**Database:**
+## Database
 
 - RDS
   - Types, Creation, Modification and Deletion
@@ -153,13 +153,13 @@
   - Redis vs Memcached
 - Redshift
 
-**Compute:**
+## Compute
 
 - ECS
 - Fargate
 - Lambda
 
-**Analytics:**
+## Analytics
 
 - EMR
 - Kinesis
@@ -167,9 +167,18 @@
   - Data Streams
   - Data Analytics
 
-**Others:**
+## Others
 
 - Stateless Application
 - Decoupling
 - Athena
 - Quicksight
+
+## Wrap up
+
+- [Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html), [AWS Pricing Calculator](https://calculator.aws/#/), [AWS TCO Calculator](https://awstcocalculator.com/)
+- [AWS Services quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
+- Scope of service e.g. Global, Regional and AZ resources
+- [Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Online free training](https://www.aws.training/Details/Curriculum?id=42037)
+- [AWS Events](https://aws.amazon.com/events/), reInvent, breakout sessions, aws.training, [whitepapers](https://aws.amazon.com/whitepapers/?whitepapers/), [customer case studies](https://aws.amazon.com/solutions/case-studies/), [this is my architecture](https://aws.amazon.com/this-is-my-architecture/)
+- [AWS Blog](https://aws.amazon.com/blogs/aws/), [AWS Online Tech Talks](https://aws.amazon.com/events/online-tech-talks/)
