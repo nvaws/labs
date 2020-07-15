@@ -16,6 +16,7 @@
 - [AWS Documentation](https://docs.aws.amazon.com/index.html)
 - [AWS Slideshare Channel](https://www.slideshare.net/AmazonWebServices)
 - [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
+- [AWS Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Free Training](https://www.aws.training/Details/Curriculum?id=42037)
 
 ## AWS Services
 
@@ -135,7 +136,7 @@
 - [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
 - [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
 - [Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/)
-- [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+- [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), [Sample Templates](https://aws.amazon.com/cloudformation/resources/templates/)
 - [OpsWorks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html)
 
 ## Day 03
@@ -180,6 +181,10 @@
 - [AWS Services quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
 - Scope of service e.g. Global, Regional and AZ resources
 - [Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Online free training](https://www.aws.training/Details/Curriculum?id=42037)
+- [AWS Blog](https://aws.amazon.com/blogs/)
+- [AWS Knowledge Center](https://aws.amazon.com/premiumsupport/knowledge-center/)
 - [AWS Samples](https://github.com/aws-samples)
-- [AWS Events](https://aws.amazon.com/events/), reInvent, breakout sessions, aws.training, [whitepapers](https://aws.amazon.com/whitepapers/?whitepapers/), [customer case studies](https://aws.amazon.com/solutions/case-studies/), [this is my architecture](https://aws.amazon.com/this-is-my-architecture/)
+- [AWS Solutions](https://aws.amazon.com/solutions/)
+- [AWS Events](https://aws.amazon.com/events/)
+- [AWS YouTube Channel](https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg) reInvent, breakout sessions, aws.training, [whitepapers](https://aws.amazon.com/whitepapers/?whitepapers/), [customer case studies](https://aws.amazon.com/solutions/case-studies/), [this is my architecture](https://aws.amazon.com/this-is-my-architecture/)
 - [AWS Blog](https://aws.amazon.com/blogs/aws/), [AWS Online Tech Talks](https://aws.amazon.com/events/online-tech-talks/)
