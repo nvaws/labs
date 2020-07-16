@@ -55,8 +55,9 @@ Repeat the same steps to create 3 more Subnets with below configuration.
   * Availability Zone: _choose the second AZ from dropdown_
   * IPv4 CIDR block: 10.0.4.0/24
   
-:key: Once all the subnets are created, select MyPublicSubnet01 and click on the Subnet Actions dropdown; go to Modify auto-assign IP settings and check Enable auto-assign public IPv4 address box.  
-Click on Save. Repeat the same step for MyPublicsubnet02 as well. Do not enable this setting for Private Subnets.
+:key: Once all the subnets are created, select MyPublicSubnet01 and click on the Subnet Actions dropdown; go to Modify auto-assign IP settings and check Enable auto-assign public IPv4 address box.  Click on Save. 
+
+Repeat the same step for MyPublicsubnet02 as well but do not enable this setting for Private Subnets.
 
 _Why is the available number of IPs showing as 251, where are the rest 5 IPs used?_  
 _Why have we created two private and public in different subnets? Should we not create both Public subnets in one AZ and both Private in another AZ?_
@@ -385,4 +386,4 @@ Delete the resources in the below order
 
 ***All the services used in this lab are eligible and covered within the free tier account. There should not be any charge if you delete all the resources within a couple of hours of creation provided you have monthly limits left.***
 
-### Lab Complete!
+✔️ Lab Complete!
