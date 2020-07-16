@@ -41,7 +41,7 @@ Visit IAM and create an IAM Role as stated below
 - Permissions: "FoW_EC2_Instance_Policy"
 - Name: "FoW_EC2_Instance_Role"
 
-:white_check_mark: Deploying the application using Elastic Beanstalk
+### :white_check_mark: Deploying the application using Elastic Beanstalk
 
 Go to Elastic Beanstalk service under Compute  
 
@@ -89,7 +89,7 @@ Go to your website and place an order by clicking on "Call a drone" button.
 
 The order data will be saved in the DynamoDB table, an email notification email will be sent to owner's (your) email ID and the order will also be put in the SQS queue for further processing.
 
-:bulb: Our objective for this lab is achived but if you want to explore further you can do a few things
+#### :bulb: Our objective for this lab is achived, feel free to explore a few things further on your own
 
 - How can you make this application highly available!
 - How can you have a custom domin name fot this website!
