@@ -1,4 +1,4 @@
-# Lab - Using AWS Lambda with Amazon S3
+# Serverless thumbnails generation using AWS Lambda and Amazon S3
 
 **Introduction**: In this lab we will create a sample Lambda function that creates thumbnails of
 the pictures (.jpg and .png) uploaded in an s3 bucket and saves them in another s3 bucket.
@@ -50,44 +50,46 @@ Go to IAM and create a Role as below.
 
 **Step 3** – Creating a Lambda function in **Oregon** region and configuring the trigger.
 
-**Step 3.1** – Go to Lambda under Compute services, check the Region name on top left corner.
+**Step 3.1** – Go to Lambda under Compute services, check the Region name on top Right corner.
 
-Click on Lambda > Create a function > Author from scratch
+Create a function > Author from scratch
 
 - Name: “my-lambda-function” (or any name)
 - Runtime: Python 3.6
-- Role: Choose an existing role, (choose the one you created in the Step 01)
+- Permissions > Choose or create an execution role > Use an existing role: Choose the one you created in Step 01)
 
-Click on create function, you should see a congratulations message on the next screen.
+Click on create function, you should see a success message on the next screen.
 
 We have just created a name/placeholder for our function and selected desired platform, now let us supply the code.
-Scroll to the Function Code section.
-Download the code zip from [here](https://github.com/ashydv/ThumbnailCreation/raw/master/CreateThumbnail.zip) and Scroll to the Function Code section.
 
-- Code entry type: Upload a .zip file (upload the Function package you just downloaded)
-- Runtime: Python 3.6
+Download the code zip from [here](https://github.com/ashydv/ThumbnailCreation/raw/master/CreateThumbnail.zip)  
+
+- Scroll to the Function Code section.
+- Click the Action dropdown and click on Unload a zip file.
+- Select the zip file you just downloaded and click on Save. 
+- Wait till the file is uploaded. The next screen comes automatically.
+- Ignore the message _The deployment package of your Lambda function "anyname" is too large to enable inline code editing. However, you can still invoke your function_
+- Scroll down to the **Basic settings** section > Edit > edit the handler info as mentioned below and Save.
 - :key: Handler: `CreateThumbnail.handler`
-
-Click on Save on the top of the screen with rest all fields left as default. You should go through the other fields for educating yourselves later.
 
 **Step 3.2** – Creating a trigger
 
-On the left side of the Designer section you will see the Add Triggers option, scroll down to select S3.
+On the left side of the Designer section you will see the Add Triggers option, click on that.
 
-Now in the Configure triggers section.
+Now in the Trigger configuration dropdown, select S3
 
 - Bucket – select your firstbucket (not the one with resized in the name)
-- Event type – Object Created (All)
+- Event type – All object create events
 
-Leave other fields as default and click on Add at the bottom of the screen and then save on top of the screen.
+Leave other fields as default and click on Add at the bottom right of the screen.
 
 **Step 4** – Verifying the function.
 
-- Upload a .jpg or .png objects to the source bucket using the Amazon S3 console.
-- Verify that the thumbnail was created in the “_bucketname_-resized” bucket.
+- Upload a .jpg or .png picture to the source bucket using the Amazon S3 console.
+- Check if the thumbnail got created in the “_bucketname_-resized” bucket.
 - Check the size difference between the original and resized object.
 
-Congratulations, you have just created, a server less application as lambda function that gets triggered by an event in an S3 bucket.
+Congratulations, you have just created, a server less lambda function that gets triggered by an event in an S3 bucket.
 
 You may now go to the monitoring tab and try to understand the various graphs shown on the console page.
 
