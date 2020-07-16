@@ -100,6 +100,8 @@ You may now go to the monitoring tab and try to understand the various graphs sh
 - Delete the role you created.
 - Delete the lambda function.
 
-This lab document is a simplified version of a tutorial published by AWS on their portal. You are encouraged to visit the following link to know more in details when you get time.
+✔️ Lab Complete!
+
+**Note:** This lab document is a simplified version of a tutorial published by AWS on their portal. You are encouraged to visit the following link to know more in details when you get time.
 
 <https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html?shortFooter=true>
