@@ -83,4 +83,4 @@ Clean Up
 - Click on Delete application
 
 
-Lab completed.
+✔️ Lab completed.
