@@ -65,16 +65,17 @@ We have just created a name/placeholder for our function and selected desired pl
 Download the code zip from [here](https://github.com/ashydv/ThumbnailCreation/raw/master/CreateThumbnail.zip)  
 
 - Scroll to the Function Code section.
-- Click the Action dropdown and click on Unload a zip file.
-- Select the zip file you just downloaded and click on Save. 
+- Click the Action dropdown and click on Upload a zip file.
+- Select the zip file you just downloaded and click on Save.
 - Wait till the file is uploaded. The next screen comes automatically.
 - Ignore the message _The deployment package of your Lambda function "anyname" is too large to enable inline code editing. However, you can still invoke your function_
-- Scroll down to the **Basic settings** section > Edit > edit the handler info as mentioned below and Save.
+- Scroll down to the **Basic settings** section > Edit > edit the handler info as mentioned below.
 - :key: Handler: `CreateThumbnail.handler`
+- Click on Save
 
 **Step 3.2** – Creating a trigger
 
-On the left side of the Designer section you will see the Add Triggers option, click on that.
+On the left side of the Designer section you will see the Add Triggers option, click on Add Triggers.
 
 Now in the Trigger configuration dropdown, select S3
 
@@ -89,7 +90,7 @@ Leave other fields as default and click on Add at the bottom right of the screen
 - Check if the thumbnail got created in the “_bucketname_-resized” bucket.
 - Check the size difference between the original and resized object.
 
-Congratulations, you have just created, a server less lambda function that gets triggered by an event in an S3 bucket.
+Congratulations, you have just created, a serverless lambda function that gets triggered by an event in an S3 bucket.
 
 You may now go to the monitoring tab and try to understand the various graphs shown on the console page.
 
