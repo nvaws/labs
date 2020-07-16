@@ -1,7 +1,7 @@
 # Serverless thumbnails generation using AWS Lambda and Amazon S3
 
 **Introduction**: In this lab we will create a sample Lambda function that creates thumbnails of
-the pictures (.jpg and .png) uploaded in an s3 bucket and saves them in another s3 bucket.
+the pictures (.jpg and .png) uploaded in an s3 bucket and saves them in another S3 bucket.
 
 The following diagram illustrates the application flow:
 
