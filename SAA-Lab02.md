@@ -33,7 +33,7 @@ Visit IAM and create a Custom Policy "FoW_EC2_Instance_Policy" with below mentio
 }
 ```
 
-:white_check_mark: Creating an IAM Role:  
+### :white_check_mark: Creating an IAM Role:  
 
 Visit IAM and create an IAM Role as stated below
 
@@ -70,7 +70,7 @@ You can browse the application now.
 
 Open DynamoDB, SNS, SQS in three different browser tabs and notice the resources that have been created by this application on your behalf.
 
-:white_check_mark: Go to SNS and click on the topic name that starts with 'awseb'
+### :white_check_mark: Go to SNS and click on the topic name that starts with 'awseb'
 
 - Click on Create Subscription
 - Protocol: Email
@@ -81,11 +81,13 @@ Now check your eamil, you would have got a notification, Click on confirm subscr
 
 You are all set now to recieve orders from your customers on this website.
 
+### :white_check_mark: Testing the application
+
 Go ahead and place an order by clicking on "Call a drone" button.
 
 The order data will be saved in the DynamoDB table, an email notifiction email will be sent to your earlier subscribed email ID and the order will also be put in the SQS queue for further processing.
 
-Clean Up
+### Clean Up
 
 - Go to the home page of Elastic Beanstalk
 - Click on Application on the left panel
