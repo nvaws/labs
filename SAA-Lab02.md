@@ -1,8 +1,9 @@
-This lab helps you create a web application for your company that specialises in Drone delivery of Food. the customer place an order over the appliction which is stored in DynamoDB table in AWS. An email notification is sent to you as well as the order is put in the queue for further processing.
+# Food On Wings
 
-
+In this lab excersise you create a web application for your company that specialises in Drone delivery of Food. The customer place an order over your appliction, customer's information is stored in a DynamoDB table.  An email notification is sent to the owner (you) as well as the order is put in the queue for further processing.
 
 AWS services used:  
+
 - IAM
 - Elastic Beanstalk
 - Cloudformation
@@ -10,9 +11,9 @@ AWS services used:
 - Simple Queue Service
 - Simple Notification Service
 
-Create a Custom Policy "FoW_EC2_Instance_Policy" with below mentioned permissions
+:white_check_mark: Create a Custom Policy "FoW_EC2_Instance_Policy" with below mentioned permissions
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
