@@ -45,12 +45,12 @@ Go to IAM and create a Role as below.
 
 :key: Ensure both buckets are created in **Oregon** region and with default options.
 
-- Create a bucket with any name you want i.e. “_firstbucketname_”.
-- Create another bucket with name “_firstbucketname_-resized”.
+- Create a bucket with any name you want i.e. “_xyz_”.
+- Create another bucket with name “_xyz_-resized”.
 
 **Step 3** – Creating a Lambda function in **Oregon** region and configuring the trigger.
 
-**Step 3.1** – Creating lambda function
+**Step 3.1** – Go to Lambda under Compute services, check the Region name on top left corner.
 
 Click on Lambda > Create a function > Author from scratch
 
@@ -76,7 +76,7 @@ On the left side of the Designer section you will see the Add Triggers option, s
 
 Now in the Configure triggers section.
 
-- Bucket – select your bucket (not the one with resized in the name)
+- Bucket – select your firstbucket (not the one with resized in the name)
 - Event type – Object Created (All)
 
 Leave other fields as default and click on Add at the bottom of the screen and then save on top of the screen.
@@ -87,7 +87,7 @@ Leave other fields as default and click on Add at the bottom of the screen and t
 - Verify that the thumbnail was created in the “_bucketname_-resized” bucket.
 - Check the size difference between the original and resized object.
 
-Congratulations, you have just created, a server less application as lambda function that gets triggered by an event in an s3 bucket.
+Congratulations, you have just created, a server less application as lambda function that gets triggered by an event in an S3 bucket.
 
 You may now go to the monitoring tab and try to understand the various graphs shown on the console page.
 
