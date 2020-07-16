@@ -2,7 +2,7 @@
 
 In this lab excersise you create a web application for your company that specialises in Drone delivery of Food. The customer place an order over your appliction, customer's information is stored in a DynamoDB table.  An email notification is sent to the owner (you) as well as the order is put in the queue for further processing.
 
-AWS services used:  
+### AWS services used:  
 
 - IAM
 - Elastic Beanstalk
@@ -11,7 +11,7 @@ AWS services used:
 - Simple Queue Service
 - Simple Notification Service
 
-:white_check_mark: Creating a custom policy.
+#### :white_check_mark: Creating a custom policy.
 
 Visit IAM and create a Custom Policy "FoW_EC2_Instance_Policy" with below mentioned permissions
 
@@ -83,7 +83,7 @@ You are all set now to recieve orders from your customers on this website.
 
 Go ahead and place an order by clicking on "Call a drone" button.
 
-The order will be saved in the DynamoDB table, an email notifiction email will sent to your earlier subscribed email ID and the same will also be put in the SQS queue for further processing.
+The order data will be saved in the DynamoDB table, an email notifiction email will be sent to your earlier subscribed email ID and the order will also be put in the SQS queue for further processing.
 
 Clean Up
 
