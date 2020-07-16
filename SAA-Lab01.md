@@ -8,7 +8,7 @@ In this lab we are going to design the network for a highly available two tier w
 
 The network after building, will look similer to the picture below
 
- ![](https://github.com/ashydv/aws-labs/blob/master/images/NetworkDiagram.png)
+![](https://github.com/ashydv/aws-labs/blob/master/images/NetworkDiagram.png)
 
 ### Activity 01 – Creating a VPC
 
@@ -27,8 +27,7 @@ Now you need to give a name to your VPC and select a CIDR notation.
 
 Select MyVPC and click on Action drop-down.
 
-* Ensure that Edit DNS Resolution is selected as yes/box is checked.
-* Ensure that Edit DNS Hostnames is selected as yes/box is checked..
+* Select Edit DNS hostnames and click Enable.
 
 ### Activity 02 - Creating Subnets
 
@@ -37,7 +36,7 @@ Click on Subnets in the sidebar of the VPC Dashboard, click on Create Subnet
 
 * Name tag: MyPrivateSubnet01
   * VPC: MyVPC
-  * Availability Zone: _choose the first one you see_
+  * Availability Zone: _choose the first AZ from dropdown_
   * IPv4 CIDR block: 10.0.1.0/24
   
 Click on Yes, Create. Your new subnet should have been created now and show up on the screen.  
@@ -45,18 +44,18 @@ Repeat the same steps to create 3 more Subnets with below configuration.
 
 * Name tag: MyPrivateSubnet02
   * VPC: MyVPC
-  * Availability Zone: _choose the second one you see_
+  * Availability Zone: _choose the second AZ from dropdown_
   * IPv4 CIDR block: 10.0.2.0/24
 * Name tag: MyPublicSubnet01
   * VPC: MyVPC
-  * Availability Zone: _choose the first one you see_
+  * Availability Zone: _choose the first AZ from dropdown_
   * IPv4 CIDR block: 10.0.3.0/24
 * Name tag: MyPublicSubnet02
   * VPC: MyVPC
-  * Availability Zone: _choose the second one you see_
+  * Availability Zone: _choose the second AZ from dropdown_
   * IPv4 CIDR block: 10.0.4.0/24
   
-Once all the subnets are created, select MyPublicSubnet01 and click on the Subnet Actions dropdown; go to Modify auto-assign IP settings and check Enable auto-assign public IPv4 address box.  
+:key: Once all the subnets are created, select MyPublicSubnet01 and click on the Subnet Actions dropdown; go to Modify auto-assign IP settings and check Enable auto-assign public IPv4 address box.  
 Click on Save. Repeat the same step for MyPublicsubnet02 as well. Do not enable this setting for Private Subnets.
 
 _Why is the available number of IPs showing as 251, where are the rest 5 IPs used?_  
@@ -226,7 +225,7 @@ Go through the various options under Action drop down.
 
 Since we have installed our application and did the configurtion already through user data, let us save it as an image for our future use so we dont have to start from scrach.
 
-On the EC2 dashboard, select the instance, go to the Action dropdown, name your Image and create image. Note the AMI ID, we will use it later.
+:key: On the EC2 dashboard, select the instance, go to the Action dropdown, name your Image and create image. Note the AMI ID, we will use it later.
 
 
 ### Activity 06 - Verifying the connectivity
@@ -274,7 +273,7 @@ We will now login to MyDBServer and check the same.
 ssh ec2-user@<Private DNS end point of MyDBServer instance>
 ```
 
-Once you are in the MyDBServer, if you try pinging google.com it will fail. That proves that we do not have out bound internet connectivity from the instances in Private Subnets. You can use either use a NAT instance or NAT Gateway service to enable out bound internet connectivity from the instances in Private Subnets, remember NAT is only for outbound and Jump Servers/Bastion hosts are used for inbound remote access to the instances in Private Subnets.
+Once you are in the MyDBServer, if you try pinging google.com it will fail. That proves that we do not have out bound internet connectivity from the instances in Private Subnets. You can use either use a NAT instance or NAT Gateway service to enable outbound internet connectivity from the instances in Private Subnets, remember NAT is only for outbound and Jump Servers/Bastion hosts are used for inbound remote access to the instances in Private Subnets.
 
 Terminate the instance, we are simulating a disaster now!
 
@@ -316,7 +315,7 @@ Your Launch Configuration is created, let us now create the auto scaling group. 
 
 Click on Close, you would be directed to the Auto Scaling Groups Dashboard. Explore the Activity History and other tabs.
 
-You have just launched our highly available BikerHood application in an Auto Scaling Group. You can open the public IP addresses of both the instances in separate browser and see what happens. You should be seeing the webpage with same information but look at the bottom. You should see some instance related information. This way you can identify which server your request is being served from.
+You have just launched our highly available BikerHood application in an Auto Scaling Group. You can open the public IP addresses of both the instances in separate browser and see what happens. You should be seeing the webpage with same information but look at the footer/bottom. You should see some instance related information. This way you can identify which server your request is being served from.
 
 Also check if you received an email from SNS topic, you need to confirm the subscription.
 
@@ -331,7 +330,7 @@ Go to the Load Balancing section of EC2 dashboard and click on Target Group
 - VPC: MyVPC
 - Leave rest defaults and click Create.
 
-Let us register our instances in ASG with the MyTG target group. Select your ASG and go to action dropdown and click on edit. You will find a field for target group in the lower section. Click on the empty field and assign MyTG. Save it (save button is towards the top right of lower section)
+Let us register our instances in ASG with the MyTG target group. Select your ASG and go to action dropdown and click on edit. You will find a field for target group. Click on the empty field and assign MyTG. Save.
 
 Click on Load Balancers: Create Load Balancers
 
@@ -348,7 +347,7 @@ From next screen, create an Application Load Balancer
 - Name: MyTG
 - Leave rest defaults - Register Targets – Review – Create
 
-Click on close and it will take you to the load balancer dashboard, you should see the DNS endpoint of your load balancer in Description Tab. ALB takes a little time to come up. Refresh till you see the state as active.
+Click on close and it will take you to the load balancer dashboard, you should see the DNS endpoint (A record) of your load balancer in Description Tab. ALB takes a little time to come up. Refresh till you see the state as active.
 
 Open the DNS address of your ALB in a browser and notice what it shows. It is now diverting the traffic to both your instances. You can see the behavior of load balancer while you refresh the page and notice the instance ID.
 
@@ -378,7 +377,7 @@ You can also now try deleting one/more server in order to verify whether the aut
 Delete the resources in the below order
 
  1: ALB  
- 2: Auto Scaling Group (takes little time to delete)  
+ 2: Auto Scaling Group (takes little time to delete, find out why)  
  3: Target Group  
  4: Launch Configuration  
  5: Deregister AMI  
