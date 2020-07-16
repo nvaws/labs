@@ -1,6 +1,6 @@
 # Food On Wings
 
-In this lab excersise you create a web application for your company that specialises in Drone delivery of Food. The customer place an order over your appliction, customer's information is stored in a DynamoDB table.  An email notification is sent to the owner (you) as well as the order is put in the queue for further processing.
+In this lab excersise you deploy a web application for your company that specialises in Drone delivery of Food. The customer place an order over your appliction, customer's information is stored in a DynamoDB table.  An email notification is sent to the owner (you) as well as the order is put in the queue for further processing.
 
 ### AWS services used:  
 
