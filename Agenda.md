@@ -150,7 +150,7 @@
   - [Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora.GlobalDB.html)
   - [Hands-on Tutorial](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html)
 - [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
-  - DynamoDB Globle Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)
+  - [DynamoDB Globle Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)
   - [DAX](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)
 - ElastiCache
   - [Redis](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html), [Memcached](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/index.html), [Comparision](https://aws.amazon.com/elasticache/redis-vs-memcached/)
