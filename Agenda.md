@@ -35,9 +35,9 @@
 - [Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html)
 - [Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)
 
-### Networking
+### Networking [Watch this video](https://www.youtube.com/watch?v=hiKPPy584Mg)
 
-- [VPC](https://aws.amazon.com/vpc/)
+- [VPC](https://aws.amazon.com/vpc/), 
   - [Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html#vpc-subnet-basics) (Public, Private)
   - [VPC FlowLogs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
   - [RouteTables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
@@ -144,37 +144,39 @@
 
 ### Database
 
-- RDS
+- [RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
   - Types, Creation, Modification and Deletion
   - Read Replica
-  - Aurora global database
-- DynamoDB
-  - DynamoDB Globle Tables
-  - DAX
+  - [Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora.GlobalDB.html)
+  - [Hands-on Tutorial](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TUT_WebAppWithRDS.html)
+- [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+  - DynamoDB Globle Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)
+  - [DAX](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)
 - ElastiCache
-  - Redis vs Memcached
-- Redshift
+  - [Redis](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html), [Memcached](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/index.html), [Comparision](https://aws.amazon.com/elasticache/redis-vs-memcached/)
+- [Redshift](https://aws.amazon.com/redshift/)
 
 ### Compute
 
-- ECS
+- ECS, [Workshop](https://ecsworkshop.com/)
 - Fargate
-- Lambda
+- EKS, [Workshop](https://www.eksworkshop.com/)
+- [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 ### Analytics
 
-- EMR
+- [EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html)
 - Kinesis
-  - Data Firehose
-  - Data Streams
-  - Data Analytics
+  - [Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
+  - [Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)
+  - [Data Analytics](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/what-is.html)
 
 ### Others
 
-- Stateless Application
+- [Serverless Application Workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/)
 - Decoupling
-- Athena
-- Quicksight
+- [Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
+- [Quicksight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
 
 ### Wrap up
 
