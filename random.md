@@ -1,3 +1,17 @@
+simple user data for webpage showing the InstanceID
+
+```
+#!/bin/bash
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+wget https://raw.githubusercontent.com/ashydv/aws-labs/master/index.txt
+ID=`curl http://169.254.169.254/latest/meta-data/instance-id`
+sed "s/ID/$ID/" index.txt > index.html
+```
+
 user data for Windows to enable IIS server
 
 ```
