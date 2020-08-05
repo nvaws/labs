@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Sample App</title>
+    <style>
+        body {
+            margin-top: 200px;
+            background-color: #385F7E;
+        }
+    </style>
+</head>
+
+<body>
+    <div style=color:white;text-align:center>
+        <h1>Hello there!</h1>
+        <h2>Being served from EC2 Instance: ID</h2>
+    </div>
+</body>
+
+</html>
