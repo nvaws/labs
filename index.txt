@@ -37,7 +37,7 @@
               <th colspan="2">Instance Metadata</th>
             </tr>
             <tr>
-              <td>Instance ID</td>
+              <td>Instance Id</td>
               <td>ID</td>
             </tr>
             <tr>
