@@ -1,4 +1,4 @@
-simple user data for webpage showing the InstanceID
+Basic user data script showing some of instance metadata fields on the webpage, works with Amazon Linux 2
 
 ```
 #!/bin/bash
