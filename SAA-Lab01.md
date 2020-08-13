@@ -384,6 +384,6 @@ Delete the resources in the below order
  5: Deregister AMI  
  6: EBS Snapshot  
 
-***All the services used in this lab are eligible and covered within the free tier account. There should not be any charge if you delete all the resources within a couple of hours of creation provided you have monthly limits left.***
+***Apart from NAT Gateway which is charged $0.01, all the other services used in this lab are eligible and covered within the free tier account. There should not be any charge if you delete all the resources within a couple of hours of creation provided you have monthly limits left.***
 
 ✔️ Lab Complete!
