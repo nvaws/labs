@@ -38,23 +38,19 @@
             </tr>
             <tr>
               <td>Instance Id</td>
-              <td>ID</td>
+              <td>INSTANCEID</td>
             </tr>
             <tr>
-              <td>Region</td>
-              <td>REGION</td>
-            </tr>
-            <tr>
-              <td>Availability Zone</td>
-              <td>AZ</td>
-            </tr>
-            <tr>
-              <td>Public IP</td>
-              <td>PUBLICIP</td>
+              <td>Instance Type</td>
+              <td>INSTANCETYPE</td>
             </tr>
             <tr>
               <td>Private IP</td>
               <td>PRIVATEIP</td>
+            </tr>            
+            <tr>
+              <td>Public IP</td>
+              <td>PUBLICIP</td>
             </tr>
           </table>
     </div>
