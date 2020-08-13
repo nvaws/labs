@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Sample App</title>
+    <style>
+        body {
+            margin-top: 200px;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #6B7A8F;
+            background-position: center center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            color: white;
+            width:fit-content
+            }
+        table, td, th {
+            padding: 10px;
+            border-bottom: 1px solid #F7B733;
+        }
+        tr:hover {background-color:#393939;}
+    </style>
+</head>
+
+<body>
+    <div style=color:white;text-align:center>
+        <h1>Hello there!</h1>
+        <h2>This webpage is hosted on an Amazon EC2 Instance</h2>
+    </div>
+    <div>
+        <table>
+            <tr>
+              <th colspan="2">Instance Metadata</th>
+            </tr>
+            <tr>
+              <td>Instance Id</td>
+              <td>INSTANCEID</td>
+            </tr>
+            <tr>
+              <td>Instance Type</td>
+              <td>INSTANCETYPE</td>
+            </tr>
+            <tr>
+              <td>Private IP</td>
+              <td>PRIVATEIP</td>
+            </tr>            
+            <tr>
+              <td>Public IP</td>
+              <td>PUBLICIP</td>
+            </tr>
+          </table>
+    </div>
+      
+</body>
+
+</html>
