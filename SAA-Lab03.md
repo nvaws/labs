@@ -69,7 +69,7 @@ Download the code zip from [here](https://github.com/ashydv/ThumbnailCreation/ra
 - Select the zip file you just downloaded and click on Save.
 - Wait till the file is uploaded. The next screen comes automatically.
 - Ignore the message _The deployment package of your Lambda function "anyname" is too large to enable inline code editing. However, you can still invoke your function_
-- Scroll down to the **Basic settings** section > Edit > edit the handler info as mentioned below.
+- Scroll down to the **Runtime settings** section > Edit > edit the handler info as mentioned below.
 - :key: Handler: `CreateThumbnail.handler`
 - Click on Save
 
