@@ -1,6 +1,6 @@
 # AWS-SAA-C02
 
-## Day 01
+## Get Started
 
 - Basics of Cloud Computing 
 - [The NIST definition of cloud computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
@@ -18,7 +18,7 @@
 - [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
 - [AWS Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Free Training](https://www.aws.training/Details/Curriculum?id=42037)
 
-## AWS Services
+## Day 01
 
 - [IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
   - [The AWS Account Root User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) and [only when to use it](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html)
