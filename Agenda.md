@@ -15,8 +15,7 @@
 - [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) (to be revisited)
 - [AWS Documentation](https://docs.aws.amazon.com/index.html)
 - [AWS Slideshare Channel](https://www.slideshare.net/AmazonWebServices)
-- [Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/)
-- [AWS Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Free Training](https://www.aws.training/Details/Curriculum?id=42037)
+- [AWS Ramp-Up Guide: Architect](https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Architect.pdf)
 
 ## Day 01
 
