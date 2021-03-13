@@ -193,6 +193,6 @@
 - [AWS Solutions](https://aws.amazon.com/solutions/)
 - [AWS Events](https://aws.amazon.com/events/)
 - [Ramp-Up Guides](https://aws.amazon.com/training/course-descriptions/)
-- [AWS YouTube Channel](https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg) reInvent, breakout sessions, aws.training, [whitepapers](https://aws.amazon.com/whitepapers/?whitepapers/), [customer case studies](https://aws.amazon.com/solutions/case-studies/), [this is my architecture](https://aws.amazon.com/this-is-my-architecture/)
+- [AWS YouTube Channel](https://www.youtube.com/channel/UCd6MoB9NC6uYN2grvUNT-Zg) reInvent, breakout sessions, aws.training, [whitepapers](https://aws.amazon.com/whitepapers/?whitepapers/), [customer case studies](https://aws.amazon.com/solutions/case-studies/), [this is my architecture](https://aws.amazon.com/this-is-my-architecture/), [Video Collection](https://awsvideocatalog.com/)
 - [AWS Blog](https://aws.amazon.com/blogs/aws/), [AWS Online Tech Talks](https://aws.amazon.com/events/online-tech-talks/)
 - [Exam Readiness: AWS Certified Solutions Architect – Associate](https://www.aws.training/Details/Curriculum?id=20685)
