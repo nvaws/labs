@@ -30,7 +30,7 @@
   - [Groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html)
   - [Permissions boundary](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
   - [IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) (to be revisited)
-  - [Common Tasks](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_quick-links-common-tasks.html) - 
+  - [Common Tasks](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_quick-links-common-tasks.html)
 - [KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 - [CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html)
 - [WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html)
