@@ -62,7 +62,7 @@
   - [Routing Policies](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
 - [CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 - [API gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
-- [Global Accelerator](https://aws.amazon.com/global-accelerator/)
+- [Global Accelerator](https://aws.amazon.com/global-accelerator/), [workshop](https://intro-to-global-accelerator.workshop.aws/en)
 
 ### Compute
 
