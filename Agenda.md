@@ -179,16 +179,18 @@
 - Decoupling
 - [Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
 - [Quicksight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
-
-### Wrap up
-
 - [Simple Monthly Calculator](https://calculator.s3.amazonaws.com/index.html), [AWS Pricing Calculator](https://calculator.aws/#/), [AWS TCO Calculator](https://awstcocalculator.com/)
 - [AWS Services quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
 - Scope of service e.g. Global, Regional and AZ resources
+
+### Wrap up
+
+
 - [Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Online free training](https://www.aws.training/Details/Curriculum?id=42037), [WellArchitectedLabs](https://wellarchitectedlabs.com/)
 - [AWS Blog](https://aws.amazon.com/blogs/)
 - [AWS Knowledge Center](https://aws.amazon.com/premiumsupport/knowledge-center/)
 - [AWS Samples](https://github.com/aws-samples), [AWS Labs](https://github.com/awslabs)
+- [AWS Workshops](https://workshops.aws/)
 - [Application Migration Workshop](https://application-migration-with-aws.workshop.aws/en)
 - [AWS Solutions](https://aws.amazon.com/solutions/)
 - [AWS Events](https://aws.amazon.com/events/)
