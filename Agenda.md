@@ -173,7 +173,7 @@
   - [Data Streams](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)
   - [Data Analytics](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/what-is.html)
 
-### Others
+### Miscellaneous
 
 - [Serverless Application Workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/)
 - Decoupling
