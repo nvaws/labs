@@ -139,7 +139,6 @@
 - [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
 - [Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/)
 - [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), [Sample Templates](https://aws.amazon.com/cloudformation/resources/templates/)
-- [OpsWorks](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html)
 
 ## Day 03
 
