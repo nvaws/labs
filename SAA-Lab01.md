@@ -4,7 +4,7 @@
 
 Private networks in AWS are created by the service called Amazon Virtual Private Cloud (VPC). We can create a VPC within any AWS region of our choice and within that VPC we define subnets to manage related sets of servers or other AWS resources. VPC service lets us define rules for how network traffic from our subnets is routed. We can also decide whether our private network (VPC) should be connected to the Internet, to corporate networks or to keep the network completely private.
 
-In this lab we are going to design the network for a highly available two tier web application. The web servers will be deployed in two public subnets across two availability zones having Internet connectivity and DB servers will be deployed in two private subnets across two availability zones. The DB servers will use network address translation (NAT) service for outbound Internet connectivity. The incoming and outgoing traffic will be filtered by virtual firewalls; by NACL at Subnet level and by Security Groups at instance/resource level.
+In this lab we are going to design the network for a highly available two tier web application. The load balancer will be deployed in two public subnets across two availability zones having Internet connectivity via Internet Gateway. Rest all web/app/db servers will be deployed in two private subnets across two availability zones having outbound only internet connectivity via network address translation (NAT) service. The incoming and outgoing traffic will be filtered by virtual firewalls; by NACL at Subnet level and by Security Groups at instance/resource level.
 
 The network after building, will look similer to the picture below
 
