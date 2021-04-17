@@ -312,6 +312,6 @@ Delete the resources in the below order
  4: Launch Configuration  
 
 
-***Apart from NAT Gateway which is charged $0.01 per hour, all the other services used in this lab are eligible and covered within the free tier account. There should be only NAT Gateway charged to you if you delete all the resources within a couple of hours of creation provided you have monthly limits left.***
+***Apart from NAT Gateway which is charged $0.01 per hour, all the other services used in this lab are eligible and covered within the free tier account. There should be only NAT Gateway charged to you if you delete all the resources within free tier monthly limits.***
 
 ✔️ Lab Complete!
