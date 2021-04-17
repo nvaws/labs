@@ -308,8 +308,8 @@ Delete the resources in the below order
  1: ALB  
  2: Auto Scaling Group (takes little time to delete, find out why)  
  3: Target Group  
- 4: Launch Configuration
- 5: NAT Gateway (takes little time to delete)
+ 4: Launch Configuration  
+ 5: NAT Gateway (takes little time to delete)  
  6: Release Elastice IP
 
 
