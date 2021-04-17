@@ -173,8 +173,7 @@ wget https://raw.githubusercontent.com/ashydv/aws-labs/master/index.txt
 INSTANCEID=`curl http://169.254.169.254/latest/meta-data/instance-id`
 INSTANCETYPE=`curl http://169.254.169.254/latest/meta-data/instance-type`
 PRIVATEIP=`curl http://169.254.169.254/latest/meta-data/local-ipv4`
-PUBLICIP=`curl http://169.254.169.254/latest/meta-data/public-ipv4`
-sed -e "s/INSTANCEID/$INSTANCEID/" -e "s/INSTANCETYPE/$INSTANCETYPE/" -e "s/PRIVATEIP/$PRIVATEIP/" -e "s/PUBLICIP/$PUBLICIP/" index.txt > index.html
+sed -e "s/INSTANCEID/$INSTANCEID/" -e "s/INSTANCETYPE/$INSTANCETYPE/" -e "s/PRIVATEIP/$PRIVATEIP/" index.txt > index.html
 ```
 
 This script will –
