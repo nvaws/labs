@@ -150,7 +150,7 @@ For now, our VPC configuration is complete. The instances launched in our public
 
 ### Activity 06 - Creating EC2 instances
 
-We are now going to create 2 EC2 instances. One each as MyAppServer and MyDBServer. Let us switch to EC2 Dashboard now and click on Launch Instance.
+We are now going to create an EC2 instance as MyAppServer. Let us switch to EC2 Dashboard now and click on Launch Instance.
 
 Creating the App Server
 
