@@ -212,33 +212,30 @@ You will now be launching this application using a Launch Configuration into an 
 
 ### Activity 07 - Creating an Auto Scaling Group
 
-Go to the Auto Scaling section in your EC2 dashboard and click on Create Launch Configuration.
+Go to the Auto Scaling section in your EC2 dashboard and click on Launch Configurations. In the next scree, click on Create launch configuration.
 
-- AMI: Select the latest Amazon Linux 2 AMI.
+- Launch configuration name: MyAppServer_V01_LC
+- Amazon machine image (AMI): Find the AMI ID of Amazon Linux 2 from EC2 launch page and paste here.  
 - Instance Type: t2.micro
-- Name: MyAppServer_V01_LC
 
-Go next.
-
-- No additional storage, go next.
-- On the security group page, choose My-App-SG
+- In the Additional configuration section, expand the Advance details and paste the User data.
+- On the Security groups section, Select an existing security group and choose My-App-SG.
 - Click on Create launch configuration
-- Select the existing 'mykey' and Create launch configuration
+- In the Key pair (login) section, select the existing 'mykey'.
+- Acknowledge and click on Create launch configuration.
 
-Your Launch Configuration is created, let us now create the auto scaling group. Click on Create an Auto scaling group using this Launch configuration.
+Your Launch Configuration is created, let us now use this Launch Configuration to create the auto scaling group. Select your newly created Launch Configuration and click on action dropdown, click on Create Auto scaling group.
 
-- Group name: MyApp_ASG
-- Group size: Start with 2 instances
-- Network: MyVPC
-- Subnet: Select both the private subnets here.
-- Configure scaling policies: Use scaling policies to adjust the capacity of this group
-- Scale between 2 and 4 instances.
-- Target value: 60
-- Instances need: 10
-- Next Configure Notification
+- Name: MyApp_ASG
+- Launch configuration: it is already selected. Click Next.
+- Network: Select MyVPC from the dropdown and then selct both of the private subnets from the Subnets dropdown. Click Next.
+- Load balancing - optional: ignore everything on this page and click Next.
+- Group size: Desired capacity 2, Minimum capacity and Maximum capacity 4.
+- Scaling policies: Select Target tracking scaling policy. Click Next.
+- Click on Add notification
 - Add Notification: Create Topic
 - Send a notification to: MyASG_Topic
-- With these recipients: 'your email ID'
+- With these recipients: 'your email ID'. Click Next. 
 - Next Create a Tag with 'Key: Name' and 'Value: MyAppServer'
 - Review: Create Auto Scaling group
 
@@ -246,7 +243,7 @@ Click on Close, you would be directed to the Auto Scaling Groups Dashboard. Expl
 
 Also check if you received an email from SNS topic, you need to confirm the subscription.
 
-You have just launched our highly available web application in an Auto Scaling Group. You can not browse the application yet by as the instance donot have public IPs.
+You have just launched our highly available web application in an Auto Scaling Group. You can not browse the application yet as the instances do not have public IPs.
 
 Let us create a Load balancer in public subnets, that will divert the traffic to both these instances in round robin method.
 
@@ -257,11 +254,12 @@ Go to the Load Balancing section of EC2 dashboard and click on Target Group
 - Create Target Group
 - Target group name: MyTG
 - VPC: MyVPC
-- Leave rest defaults and click Create.
+- Leave rest defaults and click Next.
+- Leave everything om this page unchanged and click Create target group.
 
-Let us register our instances in ASG with the MyTG target group. Select your ASG and go to action dropdown and click on edit. You will find a field for target group. Click on the empty field and assign MyTG. Save.
+Let us register our instances in ASG with the MyTG target group. Go to Auto Scaling Groups, select your ASG and click on Edit button on top. Scroll down to find the Load balancing section, click on the first check box and select the target group you created from the dropdown. Go to the bottom of the page and click on Update.
 
-Click on Load Balancers: Create Load Balancers
+Go to the Load Balancers page and click on Create Load Balancers.
 
 From next screen, create an Application Load Balancer
 
@@ -278,11 +276,8 @@ From next screen, create an Application Load Balancer
 
 Click on close and it will take you to the load balancer dashboard, you should see the DNS endpoint (A record) of your load balancer in Description Tab. ALB takes a little time to come up. Refresh till you see the state as active.
 
-Open the DNS address of your ALB in a browser and notice what it shows. It is now diverting the traffic to both your instances. You can see the behavior of load balancer while you refresh the page and notice the instance ID.
+Open the DNS address of your ALB in a browser and notice what it shows. It is now diverting the traffic to both your instances. You can see the behavior of load balancer while you refresh the page and notice the instance ID/IP.
 
-So at this point of time your application can be reached by the load balancer endpoint as well as direct IPs of the instances. This is not an ideal behavior, we should not allow our app servers to accept traffic from anywhere else apart from the load balancer in order to ensure security.
-
-Can you restrict it?
 
 ### Activity 09 – Modify the Security Groups to ensure security on incoming traffic
 
@@ -297,16 +292,14 @@ Update the **My_App_SG** security group settings as shown below.
 |  SSH  |   TCP    |     22     | Custom | 0.0.0.0/0 |
 
 
-If your application is reachable only through the load balancer endpoint and not through visiting the IP addresses or EC2 instances in browser, you have done it well.
-
-You can also now try deleting one/more server in order to verify whether the auto scaling feature is able to spin up instances in response.
+You can now try deleting one/more server in order to verify whether the auto scaling feature is able to spin up instances in response.
 
 ### Clean up steps –
 
 Delete the resources in the below order
 
  1: ALB  
- 2: Auto Scaling Group (takes little time to delete, find out why)  
+ 2: Auto Scaling Group (takes a little time to delete, find out why)  
  3: Target Group  
  4: Launch Configuration  
  5: NAT Gateway (takes little time to delete)  
