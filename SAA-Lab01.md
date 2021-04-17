@@ -104,6 +104,10 @@ _You would see that all four subnets that you created are associated with the ma
 
 * Click on Edit subnet associations and select the two Public Subnets that you created. Save.
 
+:key: Repeat the above two activities (3 and 4) for creating a NAT Gateway, a Private Route Table, attaching NAT Gateway to Private route table for Internet bound traffic and then assigning this route table to the TWO private subnets.
+
+### Activity 05 - Creating Security Groups
+
 Let us now create different 'Security Groups' for App server, database and load balancer. We would leverage them in coming steps.
 In the navigation pane find and click on 'Security Groups'
 
@@ -144,7 +148,7 @@ For now, our VPC configuration is complete. The instances launched in our public
 
 ## Lab 01 – Part 02 of 03
 
-### Activity 05 - Creating EC2 instances
+### Activity 06 - Creating EC2 instances
 
 We are now going to create 2 EC2 instances. One each as MyAppServer and MyDBServer. Let us switch to EC2 Dashboard now and click on Launch Instance.
 
@@ -207,7 +211,7 @@ Terminate the instance.
 
 You will now be launching this application using a Launch Configuration into an Auto Scaling Group, the ASG will automatically grow and shrink the number of your servers based on the user defined threshold. The requests to your application will be distributed by Application Load Balancer.
 
-### Activity 06 - Creating an Auto Scaling Group
+### Activity 07 - Creating an Auto Scaling Group
 
 Go to the Auto Scaling section in your EC2 dashboard and click on Create Launch Configuration.
 
@@ -247,7 +251,7 @@ You have just launched our highly available web application in an Auto Scaling G
 
 Let us create a Load balancer in public subnets, that will divert the traffic to both these instances in round robin method.
 
-### Activity 07 - Creating an Application Load Balancer
+### Activity 08 - Creating an Application Load Balancer
 
 Go to the Load Balancing section of EC2 dashboard and click on Target Group
 
@@ -306,8 +310,7 @@ Delete the resources in the below order
  2: Auto Scaling Group (takes little time to delete, find out why)  
  3: Target Group  
  4: Launch Configuration  
- 5: Deregister AMI  
- 6: EBS Snapshot  
+
 
 ***Apart from NAT Gateway which is charged $0.01 per hour, all the other services used in this lab are eligible and covered within the free tier account. There should be only NAT Gateway charged to you if you delete all the resources within a couple of hours of creation provided you have monthly limits left.***
 
