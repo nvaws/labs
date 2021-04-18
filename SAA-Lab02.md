@@ -52,7 +52,7 @@ Go to Elastic Beanstalk service under Compute
 - Platform version: 4.14.3
 - Node.js version: 12.16.2
 
-In the Source Code Origin section, click on Local File and **upload the zip file** that you downloaded from [this link](https://github.com/ashydv/FoodOnWings/raw/master/FoodOnWings.zip).
+In the Application code section, Upload your code and **upload the zip file** that you downloaded from [this link](https://github.com/ashydv/FoodOnWings/raw/master/FoodOnWings.zip).
 
 Click on 'Configure more options'
 
