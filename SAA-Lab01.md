@@ -198,7 +198,7 @@ Finally click on Launch Instance
 
 We have just launched an EC2 instance in our public subnet as MyAppServer. 
 
-Try browsing the public DNS/IP of the web server, does it open? Yes, because you have opened the traffic on port 80 from anywhere. Ideally it should be open only to the traffic coming from the load balancer, we will do that in next section. The instance details you see on the webpage is presented by reading the meta-data of the EC2 instance.
+Try browsing the public DNS of the web server, does it open? Yes, because your MyAppServer is in a public subnet, has a public IP and the firewall allows the traffic on port 80 from anywhere. In an ideal scenario, only the Load Balancer should be in public subnet and the app servers should be in Private Subnets. The firewall of EC2 should allow traffic coming from the load balancer and not from anywhere, we will do that in next section. The instance details you see on the webpage is presented by reading the meta-data of the EC2 instance.
 
 Go through the various options under Action drop down. 
 
