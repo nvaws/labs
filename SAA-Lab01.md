@@ -179,7 +179,7 @@ sed -e "s/INSTANCEID/$INSTANCEID/" -e "s/INSTANCETYPE/$INSTANCETYPE/" -e "s/PRIV
 This script will –
 
 1 - Install an Apache web server and create a Hello World! page.  
-2 - Activate the Web server and configure it to automatically start on reboots.
+2 - Activate the Web server and configure it to automatically start on reboots.  
 3 - Read some EC2 instance related data from EC2 metadata and show it on the webpage.  
 
 * Add Storage: Leave defaults
