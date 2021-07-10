@@ -231,7 +231,7 @@ Your Launch Configuration is created, let us now use this Launch Configuration t
 - Launch configuration: it is already selected. Click Next.
 - Network: Select MyVPC from the dropdown and then selct both of the private subnets from the Subnets dropdown. Click Next.
 - Load balancing - optional: ignore everything on this page and click Next.
-- Group size: Desired capacity 2, Minimum capacity and Maximum capacity 4.
+- Group size: Desired capacity 2, Minimum capacity 2 and Maximum capacity 4.
 - Scaling policies: Select Target tracking scaling policy. Click Next.
 - Click on Add notification
 - Add Notification: Create Topic
