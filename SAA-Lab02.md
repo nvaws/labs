@@ -103,5 +103,6 @@ The order data will be saved in the DynamoDB table, an email notification email 
 - Click on Application on the left panel
 - Select your application and go to Action drop down
 - Click on Delete application
+- Release the Elastic IP
 
 ✔️ Lab completed.
