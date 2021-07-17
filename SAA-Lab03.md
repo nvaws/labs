@@ -56,7 +56,7 @@ Create a function > Author from scratch
 
 - Name: “my-lambda-function” (or any name)
 - Runtime: Python 3.6
-- Permissions > Choose or create an execution role > Use an existing role: Choose the one you created in Step 01)
+- Permissions > Change default execution role > Use an existing role: Choose the one you created in Step 01)
 
 Click on create function, you should see a success message on the next screen.
 
