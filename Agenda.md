@@ -158,8 +158,7 @@
 
 ### Compute
 
-- ECS, [Workshop](https://ecsworkshop.com/)
-- Fargate
+- ECS, Fargate [Workshop](https://ecs-cats-dogs.workshop.aws/en/)
 - EKS, [Workshop](https://www.eksworkshop.com/)
 - [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
