@@ -156,7 +156,7 @@
   - [Redis](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html), [Memcached](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/index.html), [Comparision](https://aws.amazon.com/elasticache/redis-vs-memcached/)
 
 
-### Compute
+### Containers
 
 - ECS, Fargate [Workshop](https://ecs-cats-dogs.workshop.aws/en/)
 - EKS, [Workshop](https://www.eksworkshop.com/)
