@@ -154,7 +154,7 @@
   - [DAX](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)
 - ElastiCache
   - [Redis](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html), [Memcached](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/index.html), [Comparision](https://aws.amazon.com/elasticache/redis-vs-memcached/)
-- [Redshift](https://aws.amazon.com/redshift/)
+
 
 ### Compute
 
@@ -165,6 +165,7 @@
 
 ### Analytics
 
+- [Redshift](https://aws.amazon.com/redshift/)
 - [EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html)
 - Kinesis
   - [Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
