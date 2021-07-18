@@ -184,7 +184,7 @@
 ### Wrap up
 
 
-- [Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf), [Online free training](https://www.aws.training/Details/Curriculum?id=42037), [WellArchitectedLabs](https://wellarchitectedlabs.com/)
+- [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/wellarchitected-framework.pdf#welcome), [Online free training](https://www.aws.training/Details/Curriculum?id=42037), [WellArchitectedLabs](https://wellarchitectedlabs.com/)
 - [AWS Blog](https://aws.amazon.com/blogs/)
 - [AWS Knowledge Center](https://aws.amazon.com/premiumsupport/knowledge-center/)
 - [AWS Samples](https://github.com/aws-samples), [AWS Labs](https://github.com/awslabs), [AWS Workshops](https://workshops.aws/)
